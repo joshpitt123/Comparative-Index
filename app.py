@@ -10,9 +10,9 @@ from dash.dependencies import Input, Output, State
 # ──────────────────────────────────────────────────────────────
 # File paths — update to your local files
 # ──────────────────────────────────────────────────────────────
-shapefile_path = '/Users/joshpittaway/Desktop/Internship/Github/Comparative-Index/Niger shapefiles - Git/NER_admbnda_adm3_IGNN_20230720.shp'
-csv_path_6m    = '/Users/joshpittaway/Desktop/Internship/Github/Comparative-Index/Weighted_Vulnerability_Index_Linear.csv'
-csv_path_3m    = '/Users/joshpittaway/Desktop/Internship/Github/Comparative-Index/Weighted_Vulnerability_Index_Uniform.csv'
+shapefile_path = 'Niger shapefiles - Git/NER_admbnda_adm3_IGNN_20230720.shp'
+csv_path_1    = 'Weighted_Vulnerability_Index_Linear.csv'
+csv_path_2    = 'Weighted_Vulnerability_Index_Uniform.csv'
 
 # ──────────────────────────────────────────────────────────────
 # Helper: load & prepare data (with log transform)
@@ -59,8 +59,8 @@ geojson = json.loads(shapefile_gdf.to_json())
 # ──────────────────────────────────────────────────────────────
 # Prepare log-index datasets
 # ──────────────────────────────────────────────────────────────
-merged6, months6, vmin6, vmax6 = load_data(csv_path_6m)
-merged3, months3, vmin3, vmax3 = load_data(csv_path_3m)
+merged6, months6, vmin6, vmax6 = load_data(csv_path_1)
+merged3, months3, vmin3, vmax3 = load_data(csv_path_2)
 # common timeline
 common_months = [m for m in months6 if m in months3]
 
