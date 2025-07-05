@@ -14,9 +14,9 @@ import os
 # ──────────────────────────────────────────────────────────────
 # File paths — update to your local files
 # ──────────────────────────────────────────────────────────────
-shapefile_path = 'Niger shapefiles - Git/NER_admbnda_adm3_IGNN_20230720.shp'
-csv_path_1    = 'Weighted_Vulnerability_Index_Linear.csv'
-csv_path_2    = 'Weighted_Vulnerability_Index_Uniform.csv'
+shapefile_path = 'data/Niger shapefiles - Git/NER_admbnda_adm3_IGNN_20230720.shp'
+csv_path_1    = 'data/Weighted_Vulnerability_Index_Linear.csv'
+csv_path_2    = 'data/Weighted_Vulnerability_Index_Uniform.csv'
 
 # ──────────────────────────────────────────────────────────────
 # Helper: load & prepare data (with log transform)
