@@ -172,8 +172,6 @@ if __name__ == '__main__':
 
 
 
-
-
 # import json
 # import geopandas as gpd
 # import pandas as pd
