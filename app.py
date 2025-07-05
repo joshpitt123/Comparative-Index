@@ -14,7 +14,7 @@ import os
 # ──────────────────────────────────────────────────────────────
 # File paths — update to your local files
 # ──────────────────────────────────────────────────────────────
-shapefile_path = 'data/Shapefiles/NER_admbnda_adm3_IGNN_20230720.shp'
+shapefile_path = 'data/shapefiles/NER_admbnda_adm3_IGNN_20230720.shp'
 csv_path_1    = 'data/Weighted_Vulnerability_Index_Linear.csv'
 csv_path_2    = 'data/Weighted_Vulnerability_Index_Uniform.csv'
 
