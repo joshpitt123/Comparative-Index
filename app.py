@@ -191,9 +191,9 @@ os.environ['DASH_REQUESTS_PATHNAME_PREFIX'] = '/'
 # ──────────────────────────────────────────────────────────────
 # File paths — relative to repo
 # ──────────────────────────────────────────────────────────────
-shapefile_path = './data/NER_admbnda_adm3_IGNN_20230720.shp'
-csv_path_1    = './data/Weighted_Vulnerability_Index_Linear.csv'
-csv_path_2    = './data/Weighted_Vulnerability_Index_Uniform.csv'
+shapefile_path = 'Niger shapefiles - Git/NER_admbnda_adm3_IGNN_20230720.shp'
+csv_path_1    = 'Weighted_Vulnerability_Index_Linear.csv'
+csv_path_2    = 'Weighted_Vulnerability_Index_Uniform.csv'
 
 # ──────────────────────────────────────────────────────────────
 # Lazy loading helper
