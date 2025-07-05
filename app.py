@@ -8,6 +8,11 @@ from dash import Dash, dcc, html
 from dash.dependencies import Input, Output, State
 import os
 
+os.environ['DASH_REQUESTS_PATHNAME_PREFIX'] = '/'
+
+# Variables with '6' for 6 months == csv_path_1 
+# Variables with '3' for 3 months == csv_path_2
+
 # ──────────────────────────────────────────────────────────────
 # File paths — update to your local files
 # ──────────────────────────────────────────────────────────────
