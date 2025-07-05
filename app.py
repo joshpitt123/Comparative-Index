@@ -6,6 +6,7 @@ from unidecode import unidecode
 import plotly.express as px
 from dash import Dash, dcc, html
 from dash.dependencies import Input, Output, State
+import os
 
 # ──────────────────────────────────────────────────────────────
 # File paths — update to your local files
@@ -144,4 +145,6 @@ def update_maps(idx):
     return fig6, fig3
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 8050))
+    app.run(host="0.0.0.0", port=port, debug=False)
+
